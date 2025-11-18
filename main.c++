@@ -54,7 +54,7 @@ void viewStudents() {
 
     string line;
     bool found = false;
-    cout << "\n=== STUDENT LIST ===\n";
+    cout << "\nSTUDENT LIST:\n";
     while (getline(file, line)) {
         cout << line << endl;
         found = true;
@@ -74,7 +74,7 @@ void searchStudent() {
     bool found = false;
     while (getline(file, line)) {
         if (line.find(id + ",") == 0) {
-            cout << "\n🎓 Found: " << line << endl;
+            cout << "\nFound: " << line << endl;
             found = true;
             break;
         }
@@ -134,7 +134,6 @@ void deleteStudent() {
     }
 }
 
-// 🔹 Main menu
 int main() {
     int choice;
     do {
