@@ -5,6 +5,19 @@
 #include <sstream>
 using namespace std;
 
+
+ // .\program.exe
+/*
+struct Student == mag define sa simple structure nga naga hold sa students ID, full name, and section.
+readStudents == read the entire students.txt file, splits each line by commas, creates Student objects, and returns them in a vector.
+saveStudents == overwrites students.txt with the updated list of students by writing each student's data line-by-line.
+addStudent == prompts the user for student details and appends a new record to students.txt.
+viewStudents == reads and prints every line in students.txt, showing all registered students.
+searchStudent == asks for an ID and searches the file for a line that starts with that ID, displaying the matching record.
+editStudent == loads all students, finds the one with the matching ID, updates the name and section, then saves the modified list back to the file.
+deleteStudent == loads all students, removes the one with the specified ID, and overwrites the file with the remaining students.
+    */
+
 struct Student {
     string id, name, section;
 };
